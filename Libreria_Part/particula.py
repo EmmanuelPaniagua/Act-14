@@ -24,7 +24,7 @@ class Particula:
             'red:  ' + str(self.__red) + '\n' +
             'green:  ' + str(self.__green) + '\n' +
             'blue:  ' + str(self.__blue) + '\n' +
-            'distancia:  ' + str(self.__distancia) + '\n'
+            'distancia:  ' + str(self.__distancia) + '\n\n'
         )
     @property
     def id(self):
