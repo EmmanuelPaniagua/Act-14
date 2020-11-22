@@ -72,7 +72,7 @@ class MainWindow(QMainWindow):
             self.ui.tabla.setItem (row, 7, green_widget)
             self.ui.tabla.setItem (row, 8, blue_widget)
             self.ui.tabla.setItem (row, 9, distancia_widget)
-
+ 
             row += 1
 
         for  particula in particulas:
