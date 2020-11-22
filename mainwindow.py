@@ -43,7 +43,11 @@ class MainWindow(QMainWindow):
         headers = ["Id", "Origen_x", "Origen_y", "Destino_x", "Destino_y", "Velocidad", "Red", "Green", "Blue", "Distancia"]
         self.ui.tabla.setHorizontalHeaderLabels(headers)
         self.ui.tabla.setRowCount(len(self.administrador))
-        #self.particulas.sort(key = lambda particula: particula.id)
+
+        particulas = []
+        for particula in self.administrador:
+            particulas.append(particula)
+        self.particulas.sort(key = lambda particula: particula.id)
 
     @Slot()
     def action_ordenar_distancia(self):
